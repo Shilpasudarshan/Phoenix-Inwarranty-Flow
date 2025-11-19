@@ -34,7 +34,7 @@ jobs:
          -r cli,htmlextra
 
       - name: Newman Report
-        if: always() # Ensures that this step runs even if previous steps fail (important for debugging failed test runs).
+        if: always() # Ensures that this step runs even if previous steps fail (important for debugging failed test runs)
         uses: actions/upload-artifact@v5.0.0
         with: 
           name: Newman Report
