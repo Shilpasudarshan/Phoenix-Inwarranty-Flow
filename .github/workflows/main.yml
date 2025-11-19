@@ -29,9 +29,9 @@ jobs:
 
       - name: Run the Postman Collection with newman
         run: |
-         newman run 'Inwarranty-flow collection.postman_collection.json' \
-         -e QA.postman_environment.json \  
-         -r cli,htmlextra
+            newman run 'Inwarranty-flow collection.postman_collection.json' \
+            -e QA.postman_environment.json \  
+            -r cli,htmlextra
 
       - name: Newman Report
         if: always() # Ensures that this step runs even if previous steps fail (important for debugging failed test runs)
