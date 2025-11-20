@@ -31,7 +31,7 @@ jobs:
         run: |
           newman run 'Inwarranty-flow collection.postman_collection.json' \
           -e QA.postman_environment.json \  
-          -d TestData.csv \
+          -d testdata.csv \
           -r cli,htmlextra
 
       - name: Newman Report
